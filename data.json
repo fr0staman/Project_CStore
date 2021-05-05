@@ -1,0 +1,42 @@
+{
+ "tovar": [
+  {
+   "id": 4,
+   "name": "RTX 3080",
+   "price": 129999,
+   "number": 22
+  },
+  {
+   "id": 4,
+   "name": "RTX 3070",
+   "price": 109999,
+   "number": 30
+  },
+  {
+   "id": 4,
+   "name": "RX 6900XT",
+   "price": 109998,
+   "number": 34
+  },
+  {
+   "id": 4,
+   "name": "RTX 3060",
+   "price": "12",
+   "number": "5"
+  }
+ ],
+ "order": [
+  {
+   "id": 1,
+   "id_tovar": 4,
+   "count": 5,
+   "date": "20.12.2020"
+  },
+  {
+   "id": 1,
+   "id_tovar": 4,
+   "count": 1,
+   "date": "25.11.2021"
+  }
+ ]
+}
