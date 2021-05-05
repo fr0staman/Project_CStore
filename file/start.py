@@ -3,11 +3,10 @@ from .work.write import creating, editing, deleting, updating_t, updating_o
 from .classes.Tovar import Tovar
 from .classes.Order import Order
 from .startui import uistart
-from .UIview import Uivie
+from .UIview import Ui_MainWindow
 
 
 def start():
-    Uivie()
     #uistart()
     print("\nВас вітає АРМ комп'ютерного магазину {НеСмАк}")
     print("Доступні функції:"
