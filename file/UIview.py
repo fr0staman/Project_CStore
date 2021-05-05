@@ -12,7 +12,7 @@ def Uivie():
     with open('data.json', 'r') as f:
         data = json.load(f)
     d = json.loads(dat)
-    keys = ["ID", "Name", "Price", "Number"]
+    keys = ["ID", "Name", "Price", "Numb"]
     labels = keys + ["ID"]
 
     w = QtWidgets.QTableWidget(0, len(labels))
