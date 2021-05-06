@@ -23,6 +23,12 @@
    "name": "RTX 3060",
    "price": "12",
    "number": "5"
+  },
+  {
+   "id": 4,
+   "name": "RTX 3050",
+   "price": "12000",
+   "number": "123"
   }
  ],
  "order": [
