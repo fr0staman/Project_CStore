@@ -1,8 +1,8 @@
 class Tovar:
     def __init__(self, tova, pric, numb):
         self.tovar = tova
-        self.price = pric
-        self.number = numb
+        self.price: int = pric
+        self.number: int = numb
 
     def GetName(self):
         return self.tovar
