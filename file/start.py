@@ -9,7 +9,6 @@ from .UIview import uivie
 
 
 def start():
-    uivie()
     print("\nВас вітає АРМ комп'ютерного магазину {НеСмАк}")
     print("Доступні функції:"
           "\n1 -- Перегляд товару"
@@ -20,8 +19,8 @@ def start():
           "\n6 -- Вихід з програми"
           "\n7 -- пошук по назві"
           "\n8 -- перепис"
-          "\n9 -- додавання замовлення"
-          "\n10 - оформити замовлення")
+          "\n9 -- оформити замовлення"
+          "\n10 -- тестовий запуск UI\n")
     try:
         choice = int(input())
     except:
@@ -52,7 +51,7 @@ def start():
     elif choice == 9:
         updating_o(Order(input(), input()))
     elif choice == 10:
-        pass
+        uivie()
     else:
         print("Анука малєнько краще по клаві прошарились, а")
         start()

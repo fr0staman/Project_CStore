@@ -1,6 +1,6 @@
 class Order:
     def __init__(self, coun, datin):
-        self.count = coun
+        self.count:int = coun
         self.date = datin
 
     def GetCoun(self):
