@@ -4,23 +4,22 @@ from .classes.Tovar import Tovar
 from .classes.Order import Order
 from .startui import uistart
 
-
 from .UIview import uivie
 
 
 def start():
     print("\nВас вітає АРМ комп'ютерного магазину {НеСмАк}")
-    print("Доступні функції:"
+    print("\nДоступні функції:"
           "\n1 -- Перегляд товару"
           "\n2 -- Додавання нового товару"
           "\n3 -- Видалення товару"
-          "\n4 -- Редагування ціни"
+          "\n4 -- Змінити ціну"
           "\n5 -- Поставте."
-          "\n6 -- Вихід з програми"
-          "\n7 -- пошук по назві"
-          "\n8 -- перепис"
-          "\n9 -- оформити замовлення"
-          "\n10 -- тестовий запуск UI\n")
+          "\n6 -- Оформити замовлення"
+          "\n7 -- Пошук по назві товару"
+          "\n8 -- Тестовий перепис"
+          "\n9 -- Тестовий запуск UI"
+          "\n10 - вихід з програми\n")
     try:
         choice = int(input())
     except:
@@ -37,8 +36,7 @@ def start():
     elif choice == 5:
         print("Поставте. Саме так")
     elif choice == 6:
-        from sys import exit
-        exit(0)
+        updating_o(Order(input(), input()))
     elif choice == 7:
         searching(input())
     elif choice == 8:
@@ -49,9 +47,10 @@ def start():
         updating_o(Order(5, "20.12.2020"))
         updating_o(Order(1, "25.11.2021"))
     elif choice == 9:
-        updating_o(Order(input(), input()))
-    elif choice == 10:
         uivie()
+    elif choice == 10:
+        from sys import exit
+        exit(0)
     else:
         print("Анука малєнько краще по клаві прошарились, а")
         start()
